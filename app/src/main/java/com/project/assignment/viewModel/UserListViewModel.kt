@@ -24,8 +24,6 @@ class UserListViewModel() : ViewModel() {
             val apiResponse = mRepo.getUserList()
             listingStatus.value = apiResponse.status
             listingStatusCode.value = apiResponse.statusCode
-
-
             listingResponse.value = Gson().fromJson(
                 Gson().toJson(apiResponse.arrayData),
                 UserListResponse::class.java

@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -39,6 +40,7 @@ class MapFragment : Fragment(),OnMapReadyCallback {
         savedInstanceState: Bundle?
     ): View? {
         binding=FragmentMapBinding.inflate(inflater)
+        (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
         return binding.root
     }
 
@@ -89,4 +91,6 @@ class MapFragment : Fragment(),OnMapReadyCallback {
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng))
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 2f))
     }
+
+
 }

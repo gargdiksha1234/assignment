@@ -17,7 +17,7 @@ import com.project.assignment.model.response.UserListResponse
 
 
 class UserListFragment : BaseFragment() {
-    private lateinit var binding: FragmentUserListBinding
+    private lateinit var binding:FragmentUserListBinding
     private lateinit var viewModel: UserListViewModel
     private lateinit var rvadapter: DetailsAdapter
     private lateinit var list: UserListResponse
@@ -39,14 +39,21 @@ class UserListFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         initViewModel()
         viewModel.userList()
+        binding.lodeProgress.visibility=View.VISIBLE
+        viewModel.listingStatusCode.observe(this, Observer{
+            binding.lodeProgress.visibility=View.GONE
+
+
+        })
         viewModel.listingResponse.observe(this, Observer {
-            recycleradapter(it)
+            binding.lodeProgress.visibility=View.GONE
+            recyclerAdapter(it)
             list = it
         })
 
     }
 
-    private fun recycleradapter(data: UserListResponse) {
+    private fun recyclerAdapter(data: UserListResponse) {
         rvadapter = DetailsAdapter(data, onclick,requireContext())
         binding.rvRecycler.adapter = rvadapter
 
