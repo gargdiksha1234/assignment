@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name"><b>Name : </b></string>
+    <string name="user_name"><b>UserName : </b></string>
+    <string name="email"><b>Email : </b></string>
+    <string name="id"><b>Id : </b></string>
+    <string name="city"><b>"City : "</b></string>
+    <string name="street"><b>Street : </b></string>
+    <string name="suite"><b>Suite : </b></string>
+    <string name="zipcode"><b>ZipCode : </b></string>
+    <string name="catchPhrase"><b>Catch Phrase : </b></string>
+    <string name="companyName"><b>Company Name : </b></string>
+    <string name="bs"><b>Bs : </b></string>
+    <string name="Phone"><b>Phone : </b></string>
+    <string name="website"><b>Website : </b></string>
+
+
+</resources>
