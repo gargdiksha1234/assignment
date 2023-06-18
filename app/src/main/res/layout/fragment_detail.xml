@@ -8,43 +8,15 @@
     tools:context=".ui.fragment.DetailFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Diksha"
-        android:textSize="20sp"
-        android:padding="5dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Diksha"
-        android:textSize="20sp"
-        android:padding="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_id"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_userName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Diksha"
-        android:textSize="20sp"
-        android:padding="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
         android:padding="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_userName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone"
         app:layout_constraintStart_toStartOf="parent"
         />
     <androidx.appcompat.widget.AppCompatTextView
@@ -52,8 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:padding="5dp"
+        android:textColor="#000000"
+
         app:layout_constraintTop_toBottomOf="@+id/tv_email"
         app:layout_constraintStart_toStartOf="parent"
         />
@@ -63,7 +37,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textColor="#000000"
+
+        android:textSize="16sp"
         android:padding="5dp"
         app:layout_constraintTop_toBottomOf="@+id/tv_street"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +49,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+
         android:padding="5dp"
         app:layout_constraintTop_toBottomOf="@+id/tv_suite"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,40 +61,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+
         android:padding="5dp"
         app:layout_constraintTop_toBottomOf="@id/tv_city"
         app:layout_constraintStart_toStartOf="parent"
         />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toTopOf="@id/tv_id"
+        app:layout_constraintStart_toEndOf="@+id/tv_id"
+        app:layout_constraintBottom_toBottomOf="@id/tv_id"
+        app:cardElevation="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_gravity="center"
+
+
+        >
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_geo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Diksha"
-        android:textSize="20sp"
-        android:padding="5dp"
         android:src="@drawable/location"
-        app:layout_constraintTop_toBottomOf="@id/tv_zipcode"
-        app:layout_constraintStart_toStartOf="parent"
         />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Diksha"
-        android:textSize="20sp"
-        android:padding="5dp"
-        app:layout_constraintTop_toBottomOf="@id/iv_geo"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+    </androidx.cardview.widget.CardView>
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_website"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:padding="5dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_phone"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tv_zipcode"
         app:layout_constraintStart_toStartOf="parent"
         />
     <androidx.appcompat.widget.AppCompatTextView
@@ -124,7 +105,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        android:textColor="#000000"
         android:padding="5dp"
         app:layout_constraintTop_toBottomOf="@id/tv_website"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,8 +116,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:padding="5dp"
+        android:textColor="#000000"
         app:layout_constraintTop_toBottomOf="@id/tv_companyName"
         app:layout_constraintStart_toStartOf="parent"
         />
@@ -144,9 +127,73 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Diksha"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        android:textColor="#000000"
         android:padding="5dp"
         app:layout_constraintTop_toBottomOf="@id/tv_catchPhrase"
         app:layout_constraintStart_toStartOf="parent"
         />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="id"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/profileImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Leanne Graham"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/tv_id"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="UserName"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="1-770-736-8031 x56442"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@id/tv_userName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
